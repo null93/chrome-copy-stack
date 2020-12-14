@@ -1,0 +1,9 @@
+# Files
+.DS_Store
+yarn-error.log
+
+# Directories
+/.parcel-cache/
+/dist/
+/node_modules/
+/target/
