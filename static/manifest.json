@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "Copy Stack",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Add selection to copy stack and reduce stack to a result",
 	"permissions": [
 		"storage",
