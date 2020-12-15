@@ -99,11 +99,11 @@ module.exports = createMuiTheme ({
 					marginLeft: 0,
 					"&$selected": {
 						color: "#FFFFFF",
-						backgroundColor: "#1A73E8",
+						backgroundColor: "#1EB980",
 					},
 					"&$selected:hover": {
 						color: "#FFFFFF",
-						backgroundColor: "#1A73E8 !important",
+						backgroundColor: "#1EB980 !important",
 					},
 					"&:hover": {
 						color: isDark ? "#FFFFFF" : "#000000",
@@ -168,7 +168,7 @@ module.exports = createMuiTheme ({
 	palette: {
 		type: "dark",
 		primary: {
-			main: "#1A73E8",
+			main: "#1EB980",
 		},
 		background: {
 			default: isDark ? "#202124" : "#EFEFEF",
