@@ -70,10 +70,23 @@ class Application extends React.Component {
 			this.onPaste = this.pasteListener.bind ( this )
 			document.addEventListener ( "paste", this.onPaste )
 		}
-		document.getElementById ("copy-stack-shadow").addEventListener ( "DOMNodeRemoved", e => {
-			document.removeEventListener ( "copy", this.onCopy )
-			document.removeEventListener ( "paste", this.onPaste )
-		})
+		const targetNode = document.getElementById("copy-stack-shadow");
+		if ( targetNode ) {
+			const observer = new MutationObserver ( mutations => {
+				for ( const mutation of mutations ) {
+					if ( mutation.type === "childList" ) {
+						mutation.removedNodes.forEach ( removedNode => {
+							if ( removedNode === targetNode ) {
+								document.removeEventListener ( "copy", this.onCopy )
+								document.removeEventListener ( "paste", this.onPaste )
+								observer.disconnect ()
+							}
+						})
+					}
+				}
+			})
+		  	observer.observe(targetNode.parentElement, { childList: true });
+		}
 	}
 
 	componentWillUnmount () {

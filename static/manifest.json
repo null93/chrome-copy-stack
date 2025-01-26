@@ -1,13 +1,14 @@
 {
-	"manifest_version": 2,
+	"manifest_version": 3,
 	"name": "Copy Stack",
 	"version": "1.0.1",
 	"description": "Add selection to copy stack and reduce stack to a result",
 	"permissions": [
 		"storage",
-		"activeTab"
+		"activeTab",
+		"scripting"
 	],
-	"browser_action": {
+	"action": {
 		"default_title": "Copy Stack",
 		"default_icon": "icon-128.png"
 	},
@@ -18,7 +19,7 @@
 		"128": "icon-128.png"
 	},
 	"background": {
-		"scripts": [ "background.js" ],
-		"persistent": false
+		"service_worker": "service_worker.js",
+		"type": "module"
 	}
 }
