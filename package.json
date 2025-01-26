@@ -1,6 +1,6 @@
 {
 	"name": "copy-stack",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "Add selection to copy stack and reduce stack to a result",
 	"author": "Rafael Grigorian <rafael@grigorian.org>",
 	"license": "MIT",

@@ -2,7 +2,7 @@
 > Add selection to copy stack and reduce stack to a result
 
 ![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge&color=1A73E8)
-![Version 1.0.1](https://img.shields.io/badge/Version-1.0.1-yellow.svg?style=for-the-badge&color=1A73E8)
+![Version 1.0.2](https://img.shields.io/badge/Version-1.0.2-yellow.svg?style=for-the-badge&color=1A73E8)
 
 ![screenshot](docs/images/screenshot-1.png)
 
